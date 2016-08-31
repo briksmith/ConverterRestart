@@ -9,7 +9,7 @@
 <body>
 	<h1>Welcome to Brian's Converter</h1>
 	
-	<form action="convertUnits">
+	<form action="ConverterController" method="get">
 		Convert from: <input type="number" name="convertFrom">
 		<select name="unitsFrom">
 			<option value="inches">inches
@@ -21,7 +21,9 @@
 			<option value="feet">feet
 		</select>
 		<textarea name="result" rows="1" cols="30"></textarea>
-	
+		<br>
+		<input type="button" value="Convert">
 	</form>
+	<h2>output is: ${output}</h2>
 </body>
 </html>
